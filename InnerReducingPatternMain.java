@@ -28,9 +28,7 @@ public class Main
 	int[][] res=new int[n+n][n+n];
 	while(t>0){
 	for(int i=s;i<=l;i++){
-	    for(int j=s;j<=l;j++){
-	        if(i==s || i==l || j==s || j==l) res[i][j]=t;
-	    }
+	    for(int j=s;j<=l;j++) res[i][j]=t;
 	}
 	t--;
 	s++;
