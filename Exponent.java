@@ -31,7 +31,7 @@ class Main{
         System.out.print(res);
     }else{
         double res=(1.0/(power(n,k*-1)*1.0));
-        System.out.print(res);
+        System.out.print(String.format("%.2f",res));
     }
     }
 }
