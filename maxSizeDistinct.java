@@ -7,7 +7,7 @@ Input: 4 2 4 1 4 3 4
 Output: 3 
 
 Input: 2 1 5 4 3
-Output: 1 
+Output: 5
 
 
 Note: this program is only applicable for positive integers...
