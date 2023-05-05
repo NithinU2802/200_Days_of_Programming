@@ -2,8 +2,8 @@
 
 Right Triangle values to implement hypotenuse...!
 
-Input: 3.0 4.0
-Output: 5.0
+Input: 3 4
+Output: 5.00
 
 Input: 6 7
 Output: 9.22
@@ -23,7 +23,7 @@ public class Main
 	public static void main(String[] args) {
 	Scanner x=new Scanner(System.in);
 	int a=x.nextInt(),b=x.nextInt();
-	System.out.println(hypotenuse(a,b));
+	System.out.println(String.format("%.2f",hypotenuse(a,b)));
 	
 	}
 }
