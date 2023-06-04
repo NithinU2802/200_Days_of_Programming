@@ -1,8 +1,2 @@
 # Preperation
-<h2>
-
-This respository to load and upload collections of my task ⏳🎉
-
-DailyTask roar to Solve 200 programs.....🛤️
-
-</h2>
+<h2> My Daily Challenge Now Roar to Towards 200 program (200 days) </h2>
