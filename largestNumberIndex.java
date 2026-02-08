@@ -25,18 +25,15 @@ public class Main
 	Scanner x=new Scanner(System.in);
 	String[] s=x.nextLine().split(" ");
 	int[] a=new int[s.length];
-	int n=0;
-	for(String i: s)
-	a[n++]=Integer.parseInt(i);
-	int f=0,se=0,ind=0;
-	for(int i=0;i<n;i++){
-	    if(a[i]>f){
-	        se=f;
-	        f=a[i];
-	        ind=i;
-	    }else if(a[i]>se) se=a[i];
+	int m=Integer.MIN_VALUE,ind=-1,n=0;
+	for(String i: s){ 
+	    a[n++]=Integer.parseInt(i.trim()); 
+	    if(a[n-1]>m){ m=a[n-1]; ind=n-1; }
 	}
-	if(se*2>f) System.out.print("-1");
-	else System.out.println(ind);
+	int f=0;
+	for(int i=0;i<n;i++)
+	    if(m<(a[i]*2) && i!=ind) f=1;
+	if(f==1) System.out.print("-1");
+	else System.out.print(ind);
 	}
 }
